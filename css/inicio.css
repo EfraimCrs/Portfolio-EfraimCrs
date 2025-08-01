@@ -1,0 +1,148 @@
+body {
+      background-color: #111;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    .sidebar {
+      width: 250px;
+      height: 100vh;
+      background-color: #000;
+      position: fixed;
+      padding-top: 2rem;
+    }
+
+    .sidebar a {
+      color: #bbb;
+      display: block;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+    }
+
+    .sidebar a:hover,
+    .sidebar a.active {
+      color: #0ff;
+    }
+
+    .logo {
+      font-size: 3rem;
+      color: #f05;
+      font-weight: bold;
+    }
+
+    .content {
+      margin-left: 250px;
+      padding: 4rem 2rem;
+    }
+
+    .highlight {
+      color: #0ff;
+    }
+
+    .btn-custom {
+      border: 1px solid #0ff;
+      color: #0ff;
+    }
+    .btn-custom-projeto {
+        background: #f05;
+        color: #fff;
+    }
+
+    .btn-custom-projeto:hover {
+        background-color: rgba(255, 0, 85, 0.795);
+        color: #fff;
+    }
+
+    .btn-custom:hover {
+      background-color: #0ff;
+      color: #000;
+    }
+
+    .sound-toggle {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: #f05;
+      font-weight: bold;
+    }
+
+    .awards {
+      position: absolute;
+      top: 50%;
+      right: -30px;
+      transform: rotate(45deg);
+      background: #222;
+      color: #fff;
+      padding: 0.2rem 1rem;
+      font-size: 0.8rem;
+    }
+
+    .scroll-text {
+      position: absolute;
+      bottom: 20px;
+      writing-mode: vertical-lr;
+      text-orientation: mixed;
+      font-size: 0.8rem;
+      color: #888;
+      cursor: pointer;
+    }
+
+    .scroll-left {
+      left: 10px;
+    }
+
+    .scroll-right {
+      right: 10px;
+    }
+
+    .section {
+        padding: 100px 0;
+        border-bottom: 1px solid #333;
+    }
+    .tech-card {
+
+        width: 110px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .sidebar {
+        position: static;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 1rem;
+      }
+
+      .sidebar nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+      }
+
+      .content {
+        margin-left: 0;
+        padding: 2rem 1rem;
+      }
+
+      .awards,
+      .scroll-left,
+      .scroll-right,
+      .sound-toggle {
+        display: none;
+      }
+    }
+    #Projetos .d-flex::-webkit-scrollbar {
+  height: 8px;
+}
+#Projetos .d-flex::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+#Projetos .d-flex::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
