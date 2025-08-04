@@ -161,7 +161,7 @@ body {
   text-decoration: underline;
 }
 
-/* Estilo para os ícones */
+
 #Contato i {
   margin-right: 0.5rem;
   color: #fff;
@@ -169,15 +169,23 @@ body {
   vertical-align: middle;
 }
 #Sobre p {
-  width: 100%;             /* Ocupar 100% da largura */
-  max-width: 100%;         /* Impede limite lateral */
+  width: 100%;    
+  max-width: 100%;       
   margin: 0 auto;
   font-size: 1rem;
   line-height: 1.6;
   padding: 0;
-  text-align: left;        /* Justify pode quebrar muito */
+  text-align: left;        
   color: #ddd;
 }
+
+a:hover {
+  color: #ff6b6b;
+  transition: color 0.3s ease;
+}
+
+
+
 /* {}Estilo responsivo opcional */
 @media (max-width: 576px) {
   #Sobre p {
@@ -200,5 +208,12 @@ body {
 
   #Contato p {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .sua-classe {
+    flex-direction: column;
+    padding: 20px;
   }
 }
