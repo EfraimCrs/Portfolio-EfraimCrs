@@ -105,44 +105,14 @@ body {
         width: 110px;
     }
 
-    /* RESPONSIVE */
-    @media (max-width: 768px) {
-      .sidebar {
-        position: static;
-        width: 100%;
-        height: auto;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding-top: 1rem;
-      }
-
-      .sidebar nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1rem;
-      }
-
-      .content {
-        margin-left: 0;
-        padding: 2rem 1rem;
-      }
-
-      .awards,
-      .scroll-left,
-      .scroll-right,
-      .sound-toggle {
-        display: none;
-      }
+    
+    
+    #Contato h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #fff;
     }
 
-
-#Contato h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #fff;
-}
 
 #Contato p {
   font-size: 1.1rem;
@@ -217,3 +187,35 @@ a:hover {
     padding: 20px;
   }
 }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .sidebar {
+        position: static;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 1rem;
+      }
+  
+      .sidebar nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+      }
+  
+      .content {
+        margin-left: 0;
+        padding: 2rem 1rem;
+      }
+  
+      .awards,
+      .scroll-left,
+      .scroll-right,
+      .sound-toggle {
+        display: none;
+      }
+    }
