@@ -188,34 +188,328 @@ a:hover {
   }
 }
 
-    /* RESPONSIVE */
-    @media (max-width: 768px) {
-      .sidebar {
-        position: static;
-        width: 100%;
-        height: auto;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding-top: 1rem;
-      }
+@media (max-width: 768px) {
+  .sidebar {
+    position: static;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 1rem;
+  }
+
+  .sidebar nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .content {
+    margin-left: 0;
+    padding: 2rem 1rem;
+  }
+
+  .awards,
+  .scroll-left,
+  .scroll-right,
+  .sound-toggle {
+    display: none;
+  }
+}
+/* RESPONSIVE */
+
+/* ===== CARD DAS SEÇÕES ===== */
+.section-card {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.section-card:hover {
+  border-color: #dc3545;
+  box-shadow: 0 8px 25px rgba(220, 53, 69, 0.15);
+  transform: translateY(-2px);
+}
+
+/* ===== CABEÇALHO DAS SEÇÕES ===== */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+  color: #fff;
+}
+
+/* ===== BOTÕES DE AÇÃO ===== */
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.action-btn {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: transparent;
+  color: #888;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.action-btn:hover {
+  background: rgba(220, 53, 69, 0.1);
+  color: #dc3545;
+}
+
+/* ===== SEÇÃO DE FORMAÇÃO ACADÊMICA ===== */
+.education-item {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.institution-logo {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(45deg, #ffc107, #ff9800);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #000;
+  flex-shrink: 0;
+}
+
+.alura-logo {
+  background: linear-gradient(45deg, #dc3545, #c82333);
+  color: #fff;
+}
+
+.education-details h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+  color: #fff;
+}
+
+.education-details .course {
+  color: #ccc;
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+.education-details .period {
+  color: #888;
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+}
+
+.education-details .note {
+  color: #999;
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+/* ===== SEÇÃO DE RECOMENDAÇÕES ===== */
+.recommendations-tabs {
+  display: flex;
+  gap: 0;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #333;
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  padding: 12px 0;
+  color: #888;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  margin-right: 24px;
+  transition: color 0.2s ease;
+}
+
+.tab-btn:hover {
+  color: #ccc;
+}
+
+.tab-btn.active {
+  color: #28a745;
+}
+
+.tab-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #28a745;
+  border-radius: 1px;
+}
+
+/* ===== ITENS DE RECOMENDAÇÃO ===== */
+.recommendation-item {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.recommender-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #007bff, #0056b3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.maria-avatar {
+  background: linear-gradient(45deg, #28a745, #1e7e34);
+}
+
+.recommendation-content h5 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+  color: #fff;
+}
+
+.connection-degree {
+  color: #888;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.recommendation-content .title {
+  color: #ccc;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.recommendation-content .date {
+  color: #888;
+  font-size: 0.85rem;
+  margin-bottom: 12px;
+}
+
+.recommendation-content .text {
+  color: #ddd;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+    margin: 20px auto;
+  }
   
-      .sidebar nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1rem;
-      }
+  .section-card {
+    padding: 20px;
+  }
   
-      .content {
-        margin-left: 0;
-        padding: 2rem 1rem;
-      }
+  .section-title {
+    font-size: 1.3rem;
+  }
   
-      .awards,
-      .scroll-left,
-      .scroll-right,
-      .sound-toggle {
-        display: none;
-      }
-    }
+  .education-item,
+  .recommendation-item {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .institution-logo,
+  .recommender-avatar {
+    align-self: flex-start;
+  }
+  
+  .recommendations-tabs {
+    overflow-x: auto;
+    padding-bottom: 8px;
+  }
+  
+  .tab-btn {
+    white-space: nowrap;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  .action-buttons {
+    align-self: flex-end;
+  }
+}
+/* ===== FOTO DE PERFIL CIRCULAR ===== */
+
+/* ===== ALTERNATIVA COM TAG IMG ===== */
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.profile-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover; /* Mantém proporção e corta se necessário */
+  border: 3px solid #dc3545;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(220, 53, 69, 0.3);
+}
+
+.profile-photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(220, 53, 69, 0.5);
+  border-color: #fff;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .profile-photo {
+    width: 70px;
+    height: 70px;
+    border-width: 2px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-photo {
+    width: 60px;
+    height: 60px;
+  }
+}

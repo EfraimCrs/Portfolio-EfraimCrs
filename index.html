@@ -8,17 +8,22 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/certi.css">
 </head>
 <body>
-    <div class="sidebar d-flex flex-column flex-md-column align-items-center">
-        <div class="text-center mb-4">
-            <div class="logo">E</div>
-            <p class="text-white">EfraimCrs</p>
-            <p class="text-secondary">Web Developer</p>
-        </div>
+  <div class="sidebar d-flex flex-column flex-md-column align-items-center">
+    <!-- DEPOIS (com foto de perfil) -->
+    <div class="text-center mb-4">
+  <div class="profile-container">
+    <img src="assets/projetos/myphoto.png" alt="Foto de perfil - Efraim" class="profile-photo">
+  </div>
+    <p class="text-white">EfraimCrs</p>
+    <p class="text-secondary">Web Developer</p>
+  </div>
     <nav>
       <a href="#Sobre">Sobre</a>
-      <a href="#Habilidades">Habilidades</a>
+      <a href="#Formacao">Formação</a>
+      <a href="#Certificação">Certificação</a>
       <a href="#Projetos">Projetos</a>
       <a href="#Contato">Contato</a>
       <a href="#Blog">Blog</a>
@@ -43,48 +48,262 @@
 
   <section id="Sobre" class="content">
     <h2 class="text-danger">Sobre</h2>
-    <p class="paragrafo m-0 w-100 w-md-75 w-lg-50">
+    <p class="paragrafo m-0 w-100 w-md-75 w-lg-50 justify-text">
         Efraim é um desenvolvedor Front-end em formação, atualmente cursando Análise e Desenvolvimento de Sistemas (ADS). 
         Com uma base teórica sólida em construção, ele está aplicando seus conhecimentos para criar interfaces de usuário modernas e eficientes, 
         buscando constantemente novas oportunidades para crescer e contribuir com projetos inovadores.
     </p>
   </section>
-  
-  <section id="Habilidades" class="content">
-  <h2>Habilidades</h2>
-  <div class="d-flex flex-wrap gap-3">
-        <div class="text-center border-0 shadow-sm p-3 tech-card">
-            <i class="fab fa-html5 fa-3x text-danger mb-2"></i>
-            <h6 class="mb-0">HTML5</h6>
-        </div>
 
-        <div class="text-center border-0 shadow-sm p-3 tech-card">
-            <i class="fab fa-css3-alt fa-3x text-primary mb-2"></i>
-            <h6 class="mb-0">CSS3</h6>
+  <section id="Formacao" class="content">
+  <div class="container">
+    <!-- Seção de Formação Acadêmica -->
+    <div class="section-card">
+      <div class="section-header">
+        <h3 class="section-title">Formação acadêmica</h3>
+        <div class="action-buttons">
+          <button class="action-btn" title="Adicionar formação">
+            <i class="fas fa-plus"></i>
+          </button>
+          <button class="action-btn" title="Editar seção">
+            <i class="fas fa-pencil-alt"></i>
+          </button>
         </div>
-
-        <div class="text-center border-0 shadow-sm p-3 tech-card">
-            <i class="fab fa-js fa-3x text-warning mb-2"></i>
-            <h6 class="mb-0">JavaScript</h6>
+      </div>
+      
+      <div class="education-item">
+        <div class="institution-logo">
+          U
         </div>
-
-        <div class="text-center border-0 shadow-sm p-3 tech-card">
-            <i class="fab fa-bootstrap fa-3x text-purple mb-2"></i>
-            <h6 class="mb-0">Bootstrap</h6>
+        <div class="education-details">
+          <h4>UNIASSELVI</h4>
+          <div class="course">Análise e Desenvolvimento de Sistemas</div>
+          <div class="period">2024 - 2026</div>
+          <div class="note">Nota: Cursando tecnologia em desenvolvimento de software</div>
         </div>
+      </div>
 
-        <div class="text-center border-0 shadow-sm p-3 tech-card">
-            <i class="fab fa-node-js fa-3x text-success mb-2"></i>
-            <h6 class="mb-0">Node.js</h6>
+      <!-- Você pode adicionar mais formações aqui -->
+      <div class="education-item">
+        <div class="institution-logo alura-logo">
+          A
         </div>
-
-        <div class="text-center border-0 shadow-sm p-3 tech-card">
-            <i class="fab fa-github fa-3x text-dark mb-2"></i>
-            <h6 class="mb-0">GitHub</h6>
+        <div class="education-details">
+          <h4>Alura</h4>
+          <div class="course">Formação Front-end</div>
+          <div class="period">2024 - 2025</div>
+          <div class="note">Certificação em HTML, CSS, JavaScript e frameworks modernos</div>
         </div>
-
+      </div>
     </div>
-    </section>
+
+    <!-- Seção de Recomendações -->
+    <div class="section-card">
+      <div class="section-header">
+        <h3 class="section-title">Recomendações</h3>
+        <div class="action-buttons">
+          <button class="action-btn" title="Solicitar recomendação">
+            <i class="fas fa-plus"></i>
+          </button>
+          <button class="action-btn" title="Editar seção">
+            <i class="fas fa-pencil-alt"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="recommendations-tabs">
+        <button class="tab-btn active">Recebidas</button>
+        <button class="tab-btn">Fornecidas</button>
+      </div>
+
+      <div class="recommendation-item">
+        <div class="recommender-avatar">
+          HN
+        </div>
+        <div class="recommendation-content">
+          <h5>Hercílio Neto <span class="connection-degree">1º</span></h5>
+          <div class="title">Full Stack Developer | AWS Cloud Practitioner | C# | Node.js | PHP | Vue.js | SQL | NoSQL</div>
+          <div class="date">Em 20 de junho de 2025, Hercílio orientava Efraim</div>
+          <div class="text">
+            Um ótimo desenvolvedor, muito atento aos detalhes. Além disso, aprendeu JavaScript rapidamente. É muito 
+            dedicado e ama programar. Sempre busca as melhores práticas e tem um grande potencial para crescimento na área.
+          </div>
+        </div>
+      </div>
+
+      <div class="recommendation-item">
+        <div class="recommender-avatar maria-avatar">
+          MS
+        </div>
+        <div class="recommendation-content">
+          <h5>Selk Santos <span class="connection-degree">1º</span></h5>
+          <div class="title">Senior Full Stack Developer | React.js | TypeScript | Node.js</div>
+          <div class="date">Em 15 de maio de 2025, Selk trabalhou com Efraim</div>
+          <div class="text">
+            Efraim demonstrou excelente capacidade de aprendizado durante nosso projeto colaborativo. 
+            Sua dedicação em criar interfaces modernas e responsivas é impressionante para alguém em início de carreira.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <section id="Certificação" class="content">
+    <!-- Seção de Certificados -->
+    <section class="certificates-section">
+    <!-- Estatísticas -->
+    <div class="stats-section">
+      <div class="stat-item">
+        <div class="stat-number">12</div>
+        <div class="stat-label">Certificados</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">5</div>
+        <div class="stat-label">Instituições</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">200+</div>
+        <div class="stat-label">Horas de Estudo</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">2024</div>
+        <div class="stat-label">Mais Recente</div>
+      </div>
+    </div>
+
+    <!-- Cabeçalho -->
+    <div class="section-header">
+      <h2 class="section-title">Certificados</h2>
+    </div>
+
+    <!-- Filtros -->
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="frontend">Front-end</button>
+      <button class="filter-btn" data-filter="javascript">JavaScript</button>
+      <button class="filter-btn" data-filter="alura">Alura</button>
+      <button class="filter-btn" data-filter="outros">Outros</button>
+    </div>
+
+    <!-- Grid de Certificados -->
+    <div class="certificates-grid">
+      <!-- Certificado 1 - Alura -->
+      <div class="certificate-card" data-category="frontend alura">
+        <img src="https://via.placeholder.com/400x200/1a1a1a/dc3545?text=HTML+%26+CSS" alt="Certificado HTML & CSS" class="certificate-image">
+        <div class="certificate-info">
+          <h3 class="certificate-title">HTML e CSS: praticando HTML/CSS</h3>
+          <div class="certificate-institution">
+            <i class="fas fa-graduation-cap"></i>
+            Alura
+          </div>
+          <div class="certificate-date">Concluído em Jan 2024</div>
+          <div class="certificate-skills">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">Responsivo</span>
+          </div>
+          <div class="certificate-actions">
+            <button class="action-btn btn-view" onclick="viewCertificate('cert1.jpg')">
+              <i class="fas fa-eye"></i> Visualizar
+            </button>
+            <button class="action-btn btn-download">
+              <i class="fas fa-download"></i> Baixar
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificado 2 - JavaScript -->
+      <div class="certificate-card" data-category="javascript alura">
+        <img src="https://via.placeholder.com/400x200/1a1a1a/ffc107?text=JavaScript" alt="Certificado JavaScript" class="certificate-image">
+        <div class="certificate-info">
+          <h3 class="certificate-title">JavaScript para Web: Crie páginas dinâmicas</h3>
+          <div class="certificate-institution">
+            <i class="fas fa-graduation-cap"></i>
+            Alura
+          </div>
+          <div class="certificate-date">Concluído em Mar 2024</div>
+          <div class="certificate-skills">
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">DOM</span>
+            <span class="skill-tag">Eventos</span>
+          </div>
+          <div class="certificate-actions">
+            <button class="action-btn btn-view" onclick="viewCertificate('cert2.jpg')">
+              <i class="fas fa-eye"></i> Visualizar
+            </button>
+            <button class="action-btn btn-download">
+              <i class="fas fa-download"></i> Baixar
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificado 3 - Bootstrap -->
+      <div class="certificate-card" data-category="frontend alura">
+        <img src="https://via.placeholder.com/400x200/1a1a1a/6f42c1?text=Bootstrap" alt="Certificado Bootstrap" class="certificate-image">
+        <div class="certificate-info">
+          <h3 class="certificate-title">Bootstrap 5: Crie uma landing page responsiva</h3>
+          <div class="certificate-institution">
+            <i class="fas fa-graduation-cap"></i>
+            Alura
+          </div>
+          <div class="certificate-date">Concluído em Fev 2024</div>
+          <div class="certificate-skills">
+            <span class="skill-tag">Bootstrap</span>
+            <span class="skill-tag">Grid System</span>
+            <span class="skill-tag">Components</span>
+          </div>
+          <div class="certificate-actions">
+            <button class="action-btn btn-view" onclick="viewCertificate('cert3.jpg')">
+              <i class="fas fa-eye"></i> Visualizar
+            </button>
+            <button class="action-btn btn-download">
+              <i class="fas fa-download"></i> Baixar
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificado 4 - Git -->
+      <div class="certificate-card" data-category="outros">
+        <img src="https://via.placeholder.com/400x200/1a1a1a/28a745?text=Git+%26+GitHub" alt="Certificado Git" class="certificate-image">
+        <div class="certificate-info">
+          <h3 class="certificate-title">Git e GitHub: controle e compartilhe seu código</h3>
+          <div class="certificate-institution">
+            <i class="fas fa-graduation-cap"></i>
+            Alura
+          </div>
+          <div class="certificate-date">Concluído em Abr 2024</div>
+          <div class="certificate-skills">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">Versionamento</span>
+          </div>
+          <div class="certificate-actions">
+            <button class="action-btn btn-view" onclick="viewCertificate('cert4.jpg')">
+              <i class="fas fa-eye"></i> Visualizar
+            </button>
+            <button class="action-btn btn-download">
+              <i class="fas fa-download"></i> Baixar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal para visualização -->
+  <div class="modal-overlay" id="certificateModal">
+    <div class="modal-content">
+      <img src="" alt="Certificado" class="modal-image" id="modalImage">
+      <button class="modal-close" onclick="closeModal()">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+  </div>
+  </section>
 
    <section id="Projetos" class="content">
     <h2>Projetos</h2>
@@ -162,7 +381,8 @@
         <h2>Blog</h2>
         <p>Últimos artigos e posts técnicos.</p>
   </section>
-  
+
+  <script src="script.js"></script>
 </body>
 
 </html>
