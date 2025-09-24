@@ -8,7 +8,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/certi.css">
+  <link rel="stylesheet" href="css/certificados.css">
+  <link rel="stylesheet" href="css/projetos.css">
 </head>
 <body>
   <div class="sidebar d-flex flex-column flex-md-column align-items-center">
@@ -47,12 +48,14 @@
   </div>
 
   <section id="Sobre" class="content">
-    <h2 class="text-danger">Sobre</h2>
-    <p class="paragrafo m-0 w-100 w-md-75 w-lg-50 justify-text">
-        Efraim é um desenvolvedor Front-end em formação, atualmente cursando Análise e Desenvolvimento de Sistemas (ADS). 
-        Com uma base teórica sólida em construção, ele está aplicando seus conhecimentos para criar interfaces de usuário modernas e eficientes, 
-        buscando constantemente novas oportunidades para crescer e contribuir com projetos inovadores.
-    </p>
+    <div class="container">
+      <h2 class="text-danger">Sobre</h2>
+      <p class="paragrafo m-0 w-100 w-md-75 w-lg-50 justify-text">
+          Efraim é um desenvolvedor Front-end em formação, atualmente cursando Análise e Desenvolvimento de Sistemas (ADS).
+          Com uma base teórica sólida em construção, ele está aplicando seus conhecimentos para criar interfaces de usuário modernas e eficientes,
+          buscando constantemente novas oportunidades para crescer e contribuir com projetos inovadores.
+      </p>
+    </div>
   </section>
 
   <section id="Formacao" class="content">
@@ -155,15 +158,15 @@
     <!-- Estatísticas -->
     <div class="stats-section">
       <div class="stat-item">
-        <div class="stat-number">12</div>
+        <div class="stat-number">40</div>
         <div class="stat-label">Certificados</div>
       </div>
       <div class="stat-item">
-        <div class="stat-number">5</div>
+        <div class="stat-number">4</div>
         <div class="stat-label">Instituições</div>
       </div>
       <div class="stat-item">
-        <div class="stat-number">200+</div>
+        <div class="stat-number">350+</div>
         <div class="stat-label">Horas de Estudo</div>
       </div>
       <div class="stat-item">
@@ -190,105 +193,105 @@
     <div class="certificates-grid">
       <!-- Certificado 1 - Alura -->
       <div class="certificate-card" data-category="frontend alura">
-        <img src="https://via.placeholder.com/400x200/1a1a1a/dc3545?text=HTML+%26+CSS" alt="Certificado HTML & CSS" class="certificate-image">
+        <img src="assets/img certificados/html-css.png" alt="Certificado HTML & CSS" class="certificate-image">
         <div class="certificate-info">
           <h3 class="certificate-title">HTML e CSS: praticando HTML/CSS</h3>
           <div class="certificate-institution">
             <i class="fas fa-graduation-cap"></i>
             Alura
           </div>
-          <div class="certificate-date">Concluído em Jan 2024</div>
+          <div class="certificate-date">Concluído em Fev 2025</div>
           <div class="certificate-skills">
             <span class="skill-tag">HTML5</span>
             <span class="skill-tag">CSS3</span>
             <span class="skill-tag">Responsivo</span>
           </div>
-          <div class="certificate-actions">
-            <button class="action-btn btn-view" onclick="viewCertificate('cert1.jpg')">
-              <i class="fas fa-eye"></i> Visualizar
+          <!-- <div class="certificate-actions">
+            <button class="action-btn btn-view" onclick="viewCertificate('html-css.jpg')">
+              <i class="fas fa-eye"></i>
             </button>
             <button class="action-btn btn-download">
-              <i class="fas fa-download"></i> Baixar
+              <i class="fas fa-download"></i>
             </button>
-          </div>
+          </div>-->
         </div>
       </div>
 
       <!-- Certificado 2 - JavaScript -->
       <div class="certificate-card" data-category="javascript alura">
-        <img src="https://via.placeholder.com/400x200/1a1a1a/ffc107?text=JavaScript" alt="Certificado JavaScript" class="certificate-image">
+        <img src="assets/img certificados/javascript.png" alt="Certificado JavaScript" class="certificate-image">
         <div class="certificate-info">
-          <h3 class="certificate-title">JavaScript para Web: Crie páginas dinâmicas</h3>
+          <h3 class="certificate-title">JavaScript: Construindo páginas dinâmicas</h3>
           <div class="certificate-institution">
             <i class="fas fa-graduation-cap"></i>
             Alura
           </div>
-          <div class="certificate-date">Concluído em Mar 2024</div>
+          <div class="certificate-date">Concluído em Abr 2025</div>
           <div class="certificate-skills">
             <span class="skill-tag">JavaScript</span>
             <span class="skill-tag">DOM</span>
             <span class="skill-tag">Eventos</span>
           </div>
-          <div class="certificate-actions">
-            <button class="action-btn btn-view" onclick="viewCertificate('cert2.jpg')">
-              <i class="fas fa-eye"></i> Visualizar
+          <!--<div class="certificate-actions">
+            <button class="action-btn btn-view" onclick="viewCertificate('.jpg')">
+              <i class="fas fa-eye"></i>
             </button>
             <button class="action-btn btn-download">
-              <i class="fas fa-download"></i> Baixar
+              <i class="fas fa-download"></i>
             </button>
-          </div>
+          </div>-->
         </div>
       </div>
 
       <!-- Certificado 3 - Bootstrap -->
       <div class="certificate-card" data-category="frontend alura">
-        <img src="https://via.placeholder.com/400x200/1a1a1a/6f42c1?text=Bootstrap" alt="Certificado Bootstrap" class="certificate-image">
+        <img src="assets/img certificados/bootstrap.png" alt="Certificado Bootstrap" class="certificate-image">
         <div class="certificate-info">
           <h3 class="certificate-title">Bootstrap 5: Crie uma landing page responsiva</h3>
           <div class="certificate-institution">
             <i class="fas fa-graduation-cap"></i>
             Alura
           </div>
-          <div class="certificate-date">Concluído em Fev 2024</div>
+          <div class="certificate-date">Concluído em Mar 2024</div>
           <div class="certificate-skills">
             <span class="skill-tag">Bootstrap</span>
             <span class="skill-tag">Grid System</span>
             <span class="skill-tag">Components</span>
           </div>
-          <div class="certificate-actions">
+          <!-- <div class="certificate-actions">
             <button class="action-btn btn-view" onclick="viewCertificate('cert3.jpg')">
-              <i class="fas fa-eye"></i> Visualizar
+              <i class="fas fa-eye"></i>
             </button>
             <button class="action-btn btn-download">
-              <i class="fas fa-download"></i> Baixar
+              <i class="fas fa-download"></i>
             </button>
-          </div>
+          </div> -->
         </div>
       </div>
 
       <!-- Certificado 4 - Git -->
       <div class="certificate-card" data-category="outros">
-        <img src="https://via.placeholder.com/400x200/1a1a1a/28a745?text=Git+%26+GitHub" alt="Certificado Git" class="certificate-image">
+        <img src="assets/img certificados/github.png" alt="Certificado Git" class="certificate-image">
         <div class="certificate-info">
-          <h3 class="certificate-title">Git e GitHub: controle e compartilhe seu código</h3>
+          <h3 class="certificate-title">Git e GitHub: Compartilhando e colaborando em projetos</h3>
           <div class="certificate-institution">
             <i class="fas fa-graduation-cap"></i>
             Alura
           </div>
-          <div class="certificate-date">Concluído em Abr 2024</div>
+          <div class="certificate-date">Concluído em Jul 2025</div>
           <div class="certificate-skills">
             <span class="skill-tag">Git</span>
             <span class="skill-tag">GitHub</span>
             <span class="skill-tag">Versionamento</span>
           </div>
-          <div class="certificate-actions">
+          <!-- <div class="certificate-actions">
             <button class="action-btn btn-view" onclick="viewCertificate('cert4.jpg')">
-              <i class="fas fa-eye"></i> Visualizar
+              <i class="fas fa-eye"></i>
             </button>
             <button class="action-btn btn-download">
-              <i class="fas fa-download"></i> Baixar
+              <i class="fas fa-download"></i>
             </button>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -306,66 +309,154 @@
   </section>
 
    <section id="Projetos" class="content">
-    <h2>Projetos</h2>
-    <div class="d-flex flex-row overflow-auto gap-3 pb-3" style="scroll-snap-type: x mandatory; white-space: nowrap; overflow-x: auto;">
-    <div class="card flex-shrink-0" style="width: 18rem; scroll-snap-align: start; display: inline-block;">
-      <img src="assets/projetos/luz&cena.png" class="card-img-top" alt="img-luz&cena">
-      <div class="card-body">
-        <h5 class="card-title mb-3">Luz & Cena</h5>
-        <a href="https://efraimcrs.github.io/projeto-luz-e-cena-alura/" target="_blank" class="btn btn-custom-projeto">Projeto</a>
-        <a href="https://github.com/EfraimCrs/projeto-luz-e-cena-alura" target="_blank" class="btn btn-dark">Código</a>
+    <!-- Seção de Projetos -->
+    <section class="projects-section">
+      <!-- Estatísticas -->
+      <div class="stats-section">
+        <div class="stat-item">
+          <div class="stat-number">37</div>
+          <div class="stat-label">Repositórios</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">4</div>
+          <div class="stat-label">Tecnologias</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">100+</div>
+          <div class="stat-label">Commits</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">2025</div>
+          <div class="stat-label">Ano Atual</div>
+        </div>
       </div>
-    </div>
 
-    <div class="card flex-shrink-0" style="width: 18rem; scroll-snap-align: start; display: inline-block;">
-      <img src="assets/projetos/spotify.png" class="card-img-top" alt="img-luz&cena">
-      <div class="card-body">
-        <h5 class="card-title mb-3">Clone Spotify</h5>
-        <a href="https://efraimcrs.github.io/spotify-imersao-alura/" target="_blank" class="btn btn-custom-projeto">Projeto</a>
-        <a href="https://github.com/EfraimCrs/spotify-imersao-alura" target="_blank" class="btn btn-dark">Código</a>
+      <!-- Cabeçalho -->
+      <div class="section-header">
+        <h2 class="section-title">Projetos</h2>
       </div>
-    </div>
 
-    <div class="card flex-shrink-0" style="width: 18rem; scroll-snap-align: start; display: inline-block;">
-      <img src="assets/projetos/fokus.png" class="card-img-top" alt="img-luz&cena">
-      <div class="card-body">
-        <h5 class="card-title mb-3">Fokus</h5>
-        <a href="https://github.com/EfraimCrs/projeto-fokus" target="_blank" class="btn btn-custom-projeto">Projeto</a>
-        <a href="https://github.com/EfraimCrs/spotify-imersao-alura" target="_blank" class="btn btn-dark">Código</a>
+      <!-- Filtros -->
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="html-css">HTML/CSS</button>
+        <button class="filter-btn" data-filter="javascript">JavaScript</button>
+        <button class="filter-btn" data-filter="bootstrap">Bootstrap</button>
+        <button class="filter-btn" data-filter="nodejs">NodeJs</button>
+        <button class="filter-btn" data-filter="alura">Alura</button>
       </div>
-    </div>
 
-    <div class="card flex-shrink-0" style="width: 18rem; scroll-snap-align: start; display: inline-block;">
-      <img src="assets/projetos/usedev.png" class="card-img-top" alt="img-luz&cena">
-      <div class="card-body">
-        <h5 class="card-title mb-3">Use Dev</h5>
-        <a href="https://efraimcrs.github.io/Use-Dev/" target="_blank" class="btn btn-custom-projeto">Projeto</a>
-        <a href="https://github.com/EfraimCrs/Use-Dev" target="_blank" class="btn btn-dark">Código</a>
+      <!-- Grid de Projetos -->
+      <div class="projects-grid">
+        <!-- Projeto 1 -->
+        <div class="project-card" data-category="html-css alura">
+          <img src="assets/projetos/luz&cena.png" alt="Luz & Cena" class="project-image">
+          <div class="project-info">
+            <h3 class="project-title">Luz & Cena</h3>
+            <p class="project-description">Website responsivo para uma empresa de iluminação cênica com design moderno e interativo.</p>
+            <div class="project-skills">
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">Responsivo</span>
+            </div>
+            <div class="project-actions">
+              <i class="fas fa-external-link-alt action-icon" onclick="openProject('https://efraimcrs.github.io/projeto-luz-e-cena-alura/')" title="Ver Projeto"></i>
+              <i class="fab fa-github action-icon" onclick="openProject('https://github.com/EfraimCrs/projeto-luz-e-cena-alura')" title="Ver Código"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto 2 -->
+        <div class="project-card" data-category="html-css javascript alura">
+          <img src="assets/projetos/spotify.png" alt="Clone Spotify" class="project-image">
+          <div class="project-info">
+            <h3 class="project-title">Clone Spotify</h3>
+            <p class="project-description">Reprodução da interface do Spotify com funcionalidades de reprodução de música.</p>
+            <div class="project-skills">
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">JavaScript</span>
+            </div>
+            <div class="project-actions">
+              <i class="fas fa-external-link-alt action-icon" onclick="openProject('https://efraimcrs.github.io/spotify-imersao-alura/')" title="Ver Projeto"></i>
+              <i class="fab fa-github action-icon" onclick="openProject('https://github.com/EfraimCrs/spotify-imersao-alura')" title="Ver Código"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto 3 -->
+        <div class="project-card" data-category="javascript alura">
+          <img src="assets/projetos/fokus.png" alt="Fokus" class="project-image">
+          <div class="project-info">
+            <h3 class="project-title">Fokus</h3>
+            <p class="project-description">Aplicativo de produtividade baseado na técnica Pomodoro para gerenciar tempo de estudo.</p>
+            <div class="project-skills">
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Timer</span>
+              <span class="skill-tag">Pomodoro</span>
+            </div>
+            <div class="project-actions">
+              <i class="fas fa-external-link-alt action-icon" onclick="openProject('https://github.com/EfraimCrs/projeto-fokus')" title="Ver Projeto"></i>
+              <i class="fab fa-github action-icon" onclick="openProject('https://github.com/EfraimCrs/spotify-imersao-alura')" title="Ver Código"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto 4 -->
+        <div class="project-card" data-category="html-css">
+          <img src="assets/projetos/usedev.png" alt="Use Dev" class="project-image">
+          <div class="project-info">
+            <h3 class="project-title">Use Dev</h3>
+            <p class="project-description">Plataforma para desenvolvedores com recursos e ferramentas úteis para programação.</p>
+            <div class="project-skills">
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">Design</span>
+            </div>
+            <div class="project-actions">
+              <i class="fas fa-external-link-alt action-icon" onclick="openProject('https://efraimcrs.github.io/Use-Dev/')" title="Ver Projeto"></i>
+              <i class="fab fa-github action-icon" onclick="openProject('https://github.com/EfraimCrs/Use-Dev')" title="Ver Código"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto 5 -->
+        <div class="project-card" data-category="javascript alura">
+          <img src="assets/projetos/monibank.png" alt="MoniBank" class="project-image">
+          <div class="project-info">
+            <h3 class="project-title">MoniBank</h3>
+            <p class="project-description">Interface de banco digital com validação de formulários e funcionalidades interativas.</p>
+            <div class="project-skills">
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Validação</span>
+              <span class="skill-tag">Forms</span>
+            </div>
+            <div class="project-actions">
+              <i class="fas fa-external-link-alt action-icon" onclick="openProject('https://efraimcrs.github.io/monibank/')" title="Ver Projeto"></i>
+              <i class="fab fa-github action-icon" onclick="openProject('https://github.com/EfraimCrs/monibank')" title="Ver Código"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto 6 -->
+        <div class="project-card" data-category="bootstrap alura">
+          <img src="assets/projetos/meteora.png" alt="Meteora" class="project-image">
+          <div class="project-info">
+            <h3 class="project-title">Meteora</h3>
+            <p class="project-description">Loja virtual de roupas com layout responsivo usando Bootstrap e componentes interativos.</p>
+            <div class="project-skills">
+              <span class="skill-tag">Bootstrap</span>
+              <span class="skill-tag">E-commerce</span>
+              <span class="skill-tag">Responsivo</span>
+            </div>
+            <div class="project-actions">
+              <i class="fas fa-external-link-alt action-icon" onclick="openProject('https://efraimcrs.github.io/Meteora/')" title="Ver Projeto"></i>
+              <i class="fab fa-github action-icon" onclick="openProject('https://github.com/EfraimCrs/Meteora')" title="Ver Código"></i>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-
-    <div class="card flex-shrink-0" style="width: 18rem; scroll-snap-align: start; display: inline-block;">
-      <img src="assets/projetos/monibank.png" class="card-img-top" alt="img-luz&cena">
-      <div class="card-body">
-        <h5 class="card-title mb-3">MoniBank</h5>
-        <a href="https://efraimcrs.github.io/monibank/" target="_blank" class="btn btn-custom-projeto">Projeto</a>
-        <a href="https://github.com/EfraimCrs/monibank" target="_blank" class="btn btn-dark">Código</a>
-      </div>
-    </div>
-
-    <div class="card flex-shrink-0" style="width: 18rem; scroll-snap-align: start; display: inline-block;">
-      <img src="assets/projetos/meteora.png" class="card-img-top" alt="img-luz&cena">
-      <div class="card-body">
-        <h5 class="card-title mb-3">Meteora</h5>
-        <a href="https://efraimcrs.github.io/Meteora/" target="_blank" class="btn btn-custom-projeto">Projeto</a>
-        <a href="https://github.com/EfraimCrs/Meteora" target="_blank" class="btn btn-dark">Código</a>
-      </div>
-    </div>
-
-    </div>
-    <div class="mt-2" style="width: 100%; overflow-x: auto;">
-      <div style="height: 8px; background-color: #ffffff42; border-radius: 4px;"></div>
-    </div>
+    </section>
   </section>
 
   <section id="Contato" class="content">
