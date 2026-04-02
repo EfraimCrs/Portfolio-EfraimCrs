@@ -138,6 +138,14 @@ body {
   font-size: 1.2rem;
   vertical-align: middle;
 }
+
+.h1-titulo {
+  
+  font-size: 2.0rem;
+  margin-bottom: 1rem;
+  color: rgb(255, 255, 255);
+}
+
 #Sobre p {
   width: 100%;    
   max-width: 100%;       
